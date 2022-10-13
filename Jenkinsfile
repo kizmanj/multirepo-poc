@@ -5,10 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'pwd'
-		sh 'id'
-		sh 'git --version'
-            }
+		git url:'https://github.com/apache/fineract.git'
+		git url:'https://github.com/openMF/mifosx.git'
+		sh 'ls -la'
+           }
         }
     }
 }
