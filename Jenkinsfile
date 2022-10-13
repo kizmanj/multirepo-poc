@@ -12,6 +12,8 @@ pipeline {
 			git url:'https://github.com/openMF/mifosx.git'
 		}
 		sh 'ls -la'
+		sh 'ls -la fineract'
+		sh 'ls -la mifosx'
            }
         }
     }
