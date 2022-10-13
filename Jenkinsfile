@@ -5,9 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		pwd
-		id
-		git --version
+		sh 'pwd'
+		sh 'id'
+		sh 'git --version'
             }
         }
     }
